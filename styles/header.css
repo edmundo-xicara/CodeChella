@@ -160,37 +160,6 @@
         width: 100%;
     }
 
-    .cabecalho .menu__lista {
-        transition: none;
-        max-height: none;
-        padding: 16px;
-    }
-
-    .cabecalho .menu__lista li {
-        top: 20;
-        opacity: 0;
-    }
-
-    .menu__lista li::before {
-        content: "";
-        position: absolute;
-        top: 110%;
-        width: 0;
-        left: 0;
-        height: 2px;
-        background: white;
-        transition: width 0.5s ease-out;
-    }
-    
-    .menu__lista li:hover::before {
-        width: 100%;
-    }
-    
-    @keyframes line-slide {
-        from { width: 0; }
-        to { width: 100%; }
-    }
-
     .cabecalho .menu__botao {
         display: none;
     }
@@ -199,15 +168,18 @@
         display: none;
     }
 
-    .cabecalho .menu__lista-container {
-        display: block;
-    }
-
     .cabecalho .menu__lista {
         width: 100vw;
+        max-height: none;
         flex-direction: row;
         justify-content: space-between;
         padding: 0 60px 32px 60px;
+        transition: none;
+    }
+
+    .cabecalho .menu__lista li {
+        top: 20;
+        opacity: 0;
     }
 
     .cabecalho .menu__lista > :nth-child(-n+3)::after {
@@ -236,6 +208,21 @@
             opacity: 1;
         }
     }
+
+    .menu__lista li::before {
+        content: "";
+        position: absolute;
+        top: 110%;
+        width: 0;
+        left: 0;
+        height: 2px;
+        background: white;
+        transition: width 0.5s ease-out;
+    }
+    
+    .menu__lista li:hover::before {
+        width: 100%;
+    }
 }
 
 
@@ -253,7 +240,7 @@
     .cabecalho .menu__lista {
         width: auto;
         position: static;
-        padding: 0;
+        padding: 5px;
         gap: 32px;
     }
 }
