@@ -1,0 +1,13 @@
+@import url("reset.css");
+@import url("header.css");
+@import url("main.css");
+@import url("footer.css");
+
+:root {
+    --cor-primaria: #4650BD;
+    --cor-primaria-hover: #606ADA;
+    --cor-secundaria: #008364;
+
+    --fonte-principal: 'Raleway', sans-serif;
+    --fonte-titulo: 'Calistoga', cursive;
+}

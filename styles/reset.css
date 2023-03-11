@@ -1,0 +1,20 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-size: 100%;
+    list-style-type: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+form, button, fieldset {
+    border: 0 none;
+}

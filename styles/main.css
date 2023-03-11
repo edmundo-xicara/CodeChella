@@ -1,0 +1,720 @@
+/* GERAL */
+
+.corpo {
+    background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.escondido {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.banner {
+    position: relative;
+    height: 75vw;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    opacity: 60%;
+}
+
+.banner__titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.secao {
+    text-align: center;
+    padding: 0 24px;
+}
+
+.secao__img {
+    width: 87vw;
+    max-width: 609px;
+    height: 381px;
+    margin: 32px 0;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.secao__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.secao__paragrafo {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 1.25em;
+    line-height: 40px;
+}
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: fit-content;
+    height: auto;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px #444444;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1.25em;
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria-hover);
+    cursor: pointer;
+}
+
+.material-icon {
+    font-family: "Material Icons";
+    font-weight: 400;
+    font-size: 2em;
+}
+
+/* PÁGINA PRINCIPAL */
+
+.corpo-principal .banner::before {
+    background-image: url("../assets/img/banner_boas_vindas.png");
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    opacity: 100%;
+    background-position: 50%;
+}
+
+.sobre .secao__paragrafo {
+    margin: 24px 0;
+}
+
+.sobre__link-ingresso {
+    padding: 8px 44px;
+}
+
+.corpo-principal .atracoes {
+    text-align: center;
+}
+
+.corpo-principal .atracoes__titulo {
+    margin-top: 64px;
+    margin-bottom: 32px;
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.corpo-principal .atracoes__bandas {
+    padding: 48px 0;
+}
+
+.bandas__data-container::after, .bandas__data-container::before {
+    content: '';
+    background-color: var(--cor-secundaria);
+    width: 100%;
+    height: 1px;
+    opacity: 0.5;
+}
+
+.bandas__data {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 2em;
+    background-color: var(--cor-secundaria);
+    width: fit-content;
+    padding: 16px;
+    margin: 0 auto;
+}
+
+.bandas__nomes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    padding: 0 24px;
+    margin-top: 48px;
+}
+
+.nomes__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nomes__container:nth-child(1) {
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.nomes__container:nth-child(n+2):nth-child(-n+3) {
+    font-size: 2.5em;
+}
+
+.nomes__container:nth-child(n+4) {
+    font-size: 2em;
+}
+
+.nomes__container:nth-child(n+6) {
+    font-weight: 500;
+}
+
+.atracoes__img-guitarra {
+    width: 100vw;
+    height: 338px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    margin-bottom: -5px;
+}
+    
+
+/* A EXPERIÊNCIA */
+
+.corpo-experiencia .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_experiencia.png");
+    background-size: cover;
+}
+
+.corpo-experiencia .secao__paragrafo {
+    margin-bottom: 32px;
+}
+
+/* MAPA DE SETORES */
+
+.corpo-setores .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_setores.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mapa-setores__img {
+    width: 100vw;
+}
+
+.mapa-setores__legenda {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 57px;
+}
+
+.legenda__titulo {
+    font-size: 1.25em;
+}
+
+.legenda__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.legenda__quadrado {
+    width: 32px;
+    height: 32px;
+}
+
+.mapa-setores__legenda #quadrado-azul-claro {
+    background-color: #0E7DF1;
+}
+
+.mapa-setores__legenda #quadrado-rosa {
+    background-color: #FE016E;
+}
+
+.mapa-setores__legenda #quadrado-verde {
+    background-color: #01A89E;
+}
+
+.mapa-setores__legenda #quadrado-roxo {
+    background-color: #3F51B5;
+}
+
+.mapa-setores__legenda #quadrado-azul-escuro {
+    background-color: #0E7DF1;
+}
+
+.label-quadrado {
+    font-family: var(--fonte-principal);
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.setores__titulo {
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+.setores__container .secao__titulo {
+    margin: 24px 0;
+}
+
+.setores .secao__img {
+    max-width: 382px;
+    height: 239px;
+    margin: 0;
+}
+
+.setores .secao__paragrafo {
+    margin-bottom: 32px;
+}
+
+/* INFORMAÇÕES */
+
+.corpo-info .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_info.png");
+    background-size: cover;
+}
+
+.perguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 48px;
+}
+
+.pergunta__titulo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cor-primaria);
+    padding: 16px;
+    text-align: start;
+}
+
+.pergunta__titulo-container:hover {
+    background-color: var(--cor-primaria-hover);
+}
+
+.perguntas__titulo {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    margin: 48px 0;
+}
+
+.pergunta__resposta {
+    padding: 0;
+    background-color: #C8DEEF;
+    text-align: start;
+    max-height: 0;
+    overflow: hidden;
+    color: black;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.pergunta__resposta.ativo {
+    max-height: 500px;
+    padding: 16px;
+}
+
+.pergunta__icone-dropdown {
+    transform: rotate(-0.25turn);
+    transition: transform 0.3s;
+}
+
+.pergunta__icone-dropdown.ativo {
+    transform: rotate(0);
+}
+
+.resposta__link {
+    text-decoration: underline;
+}
+
+/* COMPRA INGRESSO */
+
+.corpo-compra-ingresso .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_compra_ingresso.png");
+    background-size: 200% 150%;
+    background-position: center top;
+}
+
+.formulario-ingresso-container {
+    margin-top: 32px;
+}
+
+.formulario-ingresso-container .secao__titulo {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.formulario-ingresso {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.formulario-ingresso label {
+    font: var(--fonte-principal);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.formulario-ingresso input, select {
+    height: 56px;
+    margin-bottom: 32px;
+    padding: 0 16px;
+    font-size: 1.25em;
+    color: black;
+}
+
+.formulario-ingresso #data-nascimento {
+    max-width: 453px;
+}
+
+.formulario-ingresso__botao-submit {
+    margin-bottom: 32px;
+}
+
+/* INGRESSO */
+
+.corpo-ingresso .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_ingresso.png");
+    background-size: cover;
+}
+
+.ingresso-container {
+    margin: 64px 0;
+}
+
+.ingresso-container__titulo {
+    margin-bottom: 32px;
+}
+
+.ingresso {
+    padding: 32px;
+    background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);    
+}
+
+.ingresso__cabecalho  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingresso__cabecalho img{
+    height: 32px;
+}
+
+.ingresso__qr-code {
+    width: 100%;
+    margin: 32px 0;
+}
+
+.ingresso__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+@media screen and (min-width: 768px) {
+    /* GERAL */
+
+    .banner {
+        height: 50vw;
+    }
+
+    .banner__titulo {
+        font-size: 4em;
+    }
+
+    .secao {
+        padding: 0 60px;
+    }
+
+
+    /* PÁGINA PRINCIPAL */
+
+    .sobre__link-ingresso {
+        padding: 8px 16px;
+    }
+
+    .corpo-principal .atracoes__titulo {
+        font-size: 4em;
+    }
+
+    .bandas__data-container {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        gap: 32px;
+        align-items: center;
+        padding: 0 60px;
+    }
+
+    .bandas__data {
+        font-size: 3em;
+    }
+
+    .nomes__container {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .atracoes__img-guitarra {
+        object-position: top;
+    }
+
+    /* MAPA DE SETORES */
+
+    .mapa-setores figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa-setores__img {
+        padding: 32px 60px 48px 60px;
+    }
+
+    .legenda__titulo {
+        font-size: 2em;
+        align-self: start;
+    }
+
+    .setores__titulo {
+        margin-top: 68px;
+    }
+
+    /* COMPRA INGRESSO */
+
+    .corpo-compra-ingresso .banner::before {
+        background-size: 100% 150%;
+    }
+
+    .formulario-ingresso-container {
+        margin-top: 48px;
+    }
+
+    .formulario-ingresso-container .secao__titulo {
+        font-size: 3em;
+    }
+
+    /* INGRESSO */
+
+    .corpo-ingresso .banner::before {
+        background-position: 50%;
+    }
+
+    .ingresso__qr-code  {
+        max-height: 310px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* GERAL */
+
+    .banner {
+        height: 28vw;
+    }
+
+    .secao {
+        display: flex;
+        gap: 48px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 121.5px;
+    }
+
+    .secao__paragrafo {
+        max-width: 1000px;
+    }
+
+    /* PÁGINA PRINCIPAL */
+
+    .corpo-principal .sobre {
+        padding-top: 65px;
+        padding-bottom: 96px;
+    }
+    
+    .corpo-principal .sobre .secao__img {
+        margin: 0;
+    }
+
+    .sobre__link-ingresso {
+        height: fit-content;
+    }
+
+    .corpo-principal .atracoes__titulo {
+        margin-top: 0;
+        margin-bottom: 37px;
+    }
+
+    .corpo-principal .atracoes__bandas {
+        padding-top: 0;
+    }
+
+    .bandas__data-container {
+        margin-top: 13px;;
+    }
+
+    .bandas__nomes {
+        flex-flow: row wrap;
+        justify-content: center;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nomes__container:nth-child(1) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .atracoes__img-guitarra {
+        object-position: 0 20%;
+    }
+
+
+    /* A EXPERIÊNCIA */
+
+    .corpo-experiencia .secao {
+        padding: 64px 121.5px;
+        text-align: start;
+        align-items: center;
+    }
+
+    .corpo-experiencia .secao__paragrafo {
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    .corpo-experiencia .sustentabilidade {
+        flex-direction: row-reverse;
+        text-align: end;
+    }
+
+    /* MAPA DE SETORES */
+
+    .mapa-setores figure {
+        flex-direction: row;
+        padding: 32px 120px;
+    }
+
+    .mapa-setores__img {
+        padding: 0;
+        width: 50vw;
+    }
+
+    .setores {
+        flex-direction: column;
+    }
+
+    .setores__titulo {
+        margin-top: 48px;
+    }
+
+    .setores__container {
+        display: flex;
+        gap: 25px;
+    }
+
+    .setores__pista-premium {
+        padding-top: 106px;
+    }
+
+    /* INFORMAÇÕES */
+
+    .corpo-info .banner::before {
+        background-position: 0 60%;
+    }
+
+    .perguntas {
+        gap: 8px;
+    }
+
+    .perguntas__pergunta {
+        width: 100%;
+    }
+
+    .pergunta__resposta {
+        max-width: none;
+    }
+
+    /* COMPRA INGRESSO */
+
+    .formulario-ingresso-container {
+        display: block;
+    }
+
+    .formulario-ingresso {
+        display: grid;
+        grid-template-rows: repeat(10, auto);
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 34px;
+    }
+
+    .formulario-ingresso *{
+        grid-column: 1 / 3;
+    }
+
+    .formulario-ingresso #tipo-ingresso {
+        grid-column: 1 / 2;
+    }
+
+    .formulario-ingresso #data-nascimento, .data-nascimento-label {
+        grid-column: 2 / 3;
+        max-width: none;
+    }
+
+    .formulario-ingresso .data-nascimento-label, .tipo-ingresso-label {
+        grid-row: 5 / 6;
+    }
+
+    /* INGRESSO */
+
+    .ingresso-container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 22.5vw;
+    }
+
+    .ingresso-container__titulo br {
+        display: none;
+    }
+
+    .ingresso {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: auto auto 1fr;
+        align-items: center;
+        row-gap: 32px;
+        column-gap: 48px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .ingresso__cabecalho {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .ingresso__qr-code {
+        grid-area: 2 / 1 / 3 / 2;
+        margin: 0;
+        max-height: 220px;
+    }
+
+    .ingresso__infos {
+        grid-area: 2 / 2 / 3 / 3;
+        text-align: start;
+    }
+}
