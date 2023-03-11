@@ -223,6 +223,10 @@
     .menu__lista li:hover::before {
         width: 100%;
     }
+
+    .cabecalho .menu__lista li.atual::before {
+        width: 100%;
+    }
 }
 
 
