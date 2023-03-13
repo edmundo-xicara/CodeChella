@@ -1,11 +1,13 @@
 const campoCPF = document.querySelector("#cpf");
+const campoEmail = document.querySelector("#email");
+const campoDataNascimento = document.querySelector("#data-nascimento");
+
 formataCPF()
 
-const botaoSubmit = document.querySelector("formulario-ingresso__botao-submit");
-botaoSubmit.addEventListener("click", () => {
-    validaCPF();
-    validaEmail();
-})
+campoCPF.addEventListener("blur", () => validaCPF());
+campoEmail.addEventListener("blur", () => validaEmail());
+campoDataNascimento.addEventListener("blur", () => validaDataNascimento());
+
 
 function formataCPF() {
     campoCPF.addEventListener("keypress", (evento) => {
@@ -55,7 +57,7 @@ function validaCPF() {
 }
 
 function validaEmail() {
-    let email = document.querySelector("#email").value;
+    let email = campoEmail.value;
     let indexArroba = email.indexOf('@');
     let usuario = email.substring(0, indexArroba);
     let dominio = email.substring(indexArroba+1, email.length);
@@ -75,5 +77,15 @@ function validaEmail() {
     return false;
 }
 
+function validaDataNascimento() {
+    let dataNascimento = campoDataNascimento.value;
+    dataNascimento = new Date(dataNascimento);
+    let dataAtual = new Date();
 
+    /* Converte a diferença em milisegundos para anos */
+    let diferenca = Math.floor((dataAtual-dataNascimento) / (1000*3600*24*365))
+    
+    if(diferenca < 10) return false;
 
+    return true;
+}
