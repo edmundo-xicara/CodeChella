@@ -1,5 +1,11 @@
-var campoCPF = document.querySelector("#cpf");
+const campoCPF = document.querySelector("#cpf");
 formataCPF()
+
+const botaoSubmit = document.querySelector("formulario-ingresso__botao-submit");
+botaoSubmit.addEventListener("click", () => {
+    validaCPF();
+    validaEmail();
+})
 
 function formataCPF() {
     campoCPF.addEventListener("keypress", (evento) => {
@@ -42,8 +48,32 @@ function validaCPF() {
     
     resto = (soma*10) % 11;
     if(resto == 10 || resto == 11) resto = 0;
-    
+
     if(resto != parseInt(cpf.charAt(10))) return false;
 
     return true;
 }
+
+function validaEmail() {
+    let email = document.querySelector("#email").value;
+    let indexArroba = email.indexOf('@');
+    let usuario = email.substring(0, indexArroba);
+    let dominio = email.substring(indexArroba+1, email.length);
+
+    if ((usuario.length >= 1) &&
+        (dominio.length >= 3) &&
+        (usuario.search("@") == -1) &&
+        (dominio.search("@") == -1) &&
+        (usuario.search(" ") == -1) &&
+        (dominio.search(" ") == -1) &&
+        (dominio.search(".") != -1) &&
+        (dominio.indexOf(".") >= 1) &&
+        (dominio.lastIndexOf(".") < dominio.length-1)) {
+            return true;
+    }
+
+    return false;
+}
+
+
+
