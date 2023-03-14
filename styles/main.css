@@ -360,6 +360,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
+    row-gap: 32px;
 }
 
 .formulario-ingresso .ingresso__campo {
@@ -376,13 +377,13 @@
 
 .formulario-ingresso input, select {
     height: 56px;
-    margin-bottom: 32px;
     padding: 0 16px;
     font-size: 1.25em;
     color: black;
 }
 
 .formulario-ingresso__botao-submit {
+    margin-top: 16px;
     margin-bottom: 32px;
 }
 
