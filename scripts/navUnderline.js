@@ -1,5 +1,6 @@
 window.onload = () => {
     let linksNav = document.querySelectorAll(".menu__lista a");
+    let linksPaginaInicial = document.querySelectorAll(".logo");
     let pagina = window.location.href;
 
     linksNav.forEach(link => {
@@ -8,5 +9,10 @@ window.onload = () => {
             link.parentNode.setAttribute("aria-current", "true");
         } 
         else link.parentNode.setAttribute("aria-current", "false");
-    })
+    });
+
+    linksPaginaInicial.forEach(link => {
+        if(link.parentNode.href == pagina) link.parentNode.setAttribute("aria-current", "true");
+        else link.parentNode.setAttribute("aria-current", "false");
+    });
 }
