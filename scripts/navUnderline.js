@@ -5,6 +5,8 @@ window.onload = () => {
     linksNav.forEach(link => {
         if(link.href == pagina) {
             link.parentNode.classList.add("atual");
-        }
+            link.parentNode.setAttribute("aria-current", "true");
+        } 
+        else link.parentNode.setAttribute("aria-current", "false");
     })
 }

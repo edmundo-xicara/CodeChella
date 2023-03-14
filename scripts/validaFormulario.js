@@ -13,7 +13,7 @@ campoTipoIngresso.setCustomValidity("Por favor, escolha o tipo de ingresso que d
 
 formataCPF()
 
-campoNome.addEventListener("blur", () => {if(!validaNome()) mostraMsgErro(campoNome, "Este campo é obrigatório*");});
+campoNome.addEventListener("blur", () => {if(!validaNome()) mostraMsgErro(campoNome, "O nome é obrigatório*");});
 campoEmail.addEventListener("blur", () => {if(!validaEmail()) mostraMsgErro(campoEmail, "O email digitado é inválido*");});
 campoCPF.addEventListener("blur", () => {if(!validaCPF()) mostraMsgErro(campoCPF, "O CPF informado não existe*");});
 campoSetor.addEventListener("blur", () => {if(!validaSetor()) mostraMsgErro(campoSetor, "É preciso escolher algum setor*");});
@@ -171,10 +171,12 @@ function mostraMsgErro(campo, msg) {
     campo.style.backgroundColor = "#de5151";
     campo.setAttribute("placeholder", '');
     campo.parentNode.querySelector(".campo__msg-erro").innerHTML = msg;
+    campo.parentNode.querySelector(".campo__msg-erro").setAttribute("role", "alert");
 }
 
 function resetaMsgValidacao(campo) {
     campo.setCustomValidity('');
     campo.style.backgroundColor = '';
     campo.parentNode.querySelector(".campo__msg-erro").innerHTML = '';
+    campo.parentNode.querySelector(".campo__msg-erro").removeAttribute("role");
 } 
