@@ -25,6 +25,9 @@ let camposSelect = [campoSetor, campoTipoIngresso]
 campos.forEach(campo => campo.addEventListener("keydown", () => resetaMsgValidacao(campo)));
 camposSelect.forEach(campo => campo.addEventListener("click", () => resetaMsgValidacao(campo)));
 
+const fomulario = document.querySelector("")
+
+
 function validaNome() {
     let nome = campoNome.value;
     if(!nome) {
@@ -124,6 +127,11 @@ function validaSetor() {
 }
 
 function validaDataNascimento() {
+    if(!campoDataNascimento.value) {
+        mostraMsgErro(campoDataNascimento, "Informe a sua data de nascimento*");
+        return true;
+    }
+
     let dataNascimento = new Date(campoDataNascimento.value);
     let dataAtual = new Date();
 
