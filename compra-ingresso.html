@@ -84,42 +84,49 @@
 
                     <div class="ingresso__campo nome-container">
                         <label class="nome-label" for="nome-completo">Nome Completo:</label>
-                        <input type="text" name="Nome Completo" id="nome-completo" required>
+                        <input type="text" name="Nome Completo" id="nome-completo" placeholder="nome completo" required>
+                        <span class="campo__msg-erro"></span>
                     </div>
 
                     <div class="ingresso__campo email-container">
                         <label class="email-label" for="email">Email:</label>
-                        <input type="email" name="Email" id="email" required>
+                        <input type="email" name="Email" id="email" placeholder="usuario@exemplo.com" required>
+                        <span class="campo__msg-erro"></span>
                     </div>
 
                     <div class="ingresso__campo cpf-container">
-                        <label class="cpf-label" for="cpf">CPF:</label>
-                        <input type="text" name="CPF" id="cpf" 
-                        maxlength="14" required>
+                        <label class="cpf-label" for="cpf">CPF: <span>(não obrigatório)</span></label>
+                        <input type="text" name="CPF" id="cpf" maxlength="14" placeholder="000.000.000-00">
+                        <span class="campo__msg-erro"></span>
                     </div>
 
                     <div class="ingresso__campo setor-container">
                         <label class="setor-label" for="setor">Setor:</label>
                         <select name="Setor" id="setor" required>
+                            <option value="">Selecione um setor</option>
                             <option value="pista-comum">Pista Comum</option>
                             <option value="pista-premium">Pista Premium</option>
                             <option value="cadeiras-terreo">Cadeiras térreo</option>
                             <option value="cadeiras-superiores">Cadeiras superiores</option>
                         </select>
+                        <span class="campo__msg-erro"></span>
                     </div>
 
                     <div class="ingresso__campo data-nascimento-container">
                         <label class="data-nascimento-label" for="data-nascimento">Data de Nascimento:</label>
                         <input type="date" min="1900-01-01" name="Data de Nascimento" id="data-nascimento" required>
+                        <span class="campo__msg-erro"></span>
                     </div>
 
                     <div class="ingresso__campo tipo-ingresso-container">
                         <label class="tipo-ingresso-label" for="tipo-ingresso">Tipo de Ingresso:</label>
                         <select name="Tipo de Ingresso" id="tipo-ingresso" required>
+                            <option value="">Escolha o tipo de ingresso</option>
                             <option value="integral">Integral</option>
                             <option value="meia-entrada">Meia Entrada</option>
                             <option value="cortesia">Cortesia</option>
                         </select>
+                        <span class="campo__msg-erro"></span>
                     </div>
 
                     <button class="botao formulario-ingresso__botao-submit" type="submit">

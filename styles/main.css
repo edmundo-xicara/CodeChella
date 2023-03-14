@@ -382,6 +382,16 @@
     color: black;
 }
 
+.cpf-container span {
+    font-size: 0.75em;
+}
+
+.ingresso__campo .campo__msg-erro {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
 .formulario-ingresso__botao-submit {
     margin-top: 16px;
     margin-bottom: 32px;
