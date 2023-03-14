@@ -1,9 +1,9 @@
-const campoNome = document.querySelector("#nome-completo");
-const campoEmail = document.querySelector("#email");
-const campoCPF = document.querySelector("#cpf");
-const campoSetor = document.querySelector("#setor");
-const campoDataNascimento = document.querySelector("#data-nascimento");
-const campoTipoIngresso = document.querySelector("#tipo-ingresso");
+const campoNome = document.getElementById("nome-completo");
+const campoEmail = document.getElementById("email");
+const campoCPF = document.getElementById("cpf");
+const campoSetor = document.getElementById("setor");
+const campoDataNascimento = document.getElementById("data-nascimento");
+const campoTipoIngresso = document.getElementById("tipo-ingresso");
 
 campoNome.setCustomValidity("Por favor, informe seu nome completo");
 campoEmail.setCustomValidity("Por favor, digite seu email");
@@ -21,11 +21,19 @@ campoDataNascimento.addEventListener("blur", () => {if(!validaDataNascimento()) 
 campoTipoIngresso.addEventListener("blur", () => {if(!validaTipoIngresso()) mostraMsgErro(campoTipoIngresso, "Escolha o tipo de ingresso desejado*");});
 
 let campos = [campoNome, campoEmail, campoCPF, campoDataNascimento];
-let camposSelect = [campoSetor, campoTipoIngresso]
+let camposSelect = [campoSetor, campoTipoIngresso];
 campos.forEach(campo => campo.addEventListener("keydown", () => resetaMsgValidacao(campo)));
 camposSelect.forEach(campo => campo.addEventListener("click", () => resetaMsgValidacao(campo)));
 
-const fomulario = document.querySelector("")
+const formulario = document.getElementById("formulario-ingresso");
+formulario.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+
+    let campos = ["nome-completo", "email", "cpf", "setor", "data-nascimento", "tipo-ingresso"]; 
+    campos.forEach(campo => localStorage.setItem(campo, evento.target.elements[campo].value));
+
+    window.location.assign("ingresso.html");
+});
 
 
 function validaNome() {
@@ -62,10 +70,8 @@ function validaEmail() {
 function formataCPF() {
     campoCPF.addEventListener("keypress", (evento) => {
         if(isNaN(evento.key)) evento.preventDefault();
-
-        if((campoCPF.value.length) == 3 || (campoCPF.value.length) == 7) campoCPF.value += '.';
-
-        if((campoCPF.value.length) == 11) campoCPF.value += '-';
+        if(campoCPF.value.length == 3 || campoCPF.value.length == 7) campoCPF.value += '.';
+        if(campoCPF.value.length == 11) campoCPF.value += '-';
     })
 }
 
@@ -171,4 +177,4 @@ function resetaMsgValidacao(campo) {
     campo.setCustomValidity('');
     campo.style.backgroundColor = '';
     campo.parentNode.querySelector(".campo__msg-erro").innerHTML = '';
-}
+} 
