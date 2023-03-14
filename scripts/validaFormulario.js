@@ -29,7 +29,7 @@ const formulario = document.getElementById("formulario-ingresso");
 formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
 
-    let campos = ["nome-completo", "email", "cpf", "setor", "data-nascimento", "tipo-ingresso"]; 
+    let campos = ["nome-completo", "setor", "tipo-ingresso"]; 
     campos.forEach(campo => localStorage.setItem(campo, evento.target.elements[campo].value));
 
     window.location.assign("ingresso.html");
