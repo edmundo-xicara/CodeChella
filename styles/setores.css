@@ -1,0 +1,126 @@
+.corpo-setores .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_setores.png");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.mapa-setores__img {
+    width: 100vw;
+}
+
+.mapa-setores__legenda {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-left: 57px;
+}
+
+.legenda__titulo {
+    font-size: 1.25em;
+}
+
+.legenda__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.legenda__quadrado {
+    width: 32px;
+    height: 32px;
+}
+
+.mapa-setores__legenda #quadrado-azul-claro {
+    background-color: #0E7DF1;
+}
+
+.mapa-setores__legenda #quadrado-rosa {
+    background-color: #FE016E;
+}
+
+.mapa-setores__legenda #quadrado-verde {
+    background-color: #01A89E;
+}
+
+.mapa-setores__legenda #quadrado-roxo {
+    background-color: #3F51B5;
+}
+
+.mapa-setores__legenda #quadrado-azul-escuro {
+    background-color: #0E7DF1;
+}
+
+.label-quadrado {
+    font-family: var(--fonte-principal);
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.setores__titulo {
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+.setores__container .secao__titulo {
+    margin: 24px 0;
+}
+
+.setores .secao__img {
+    max-width: 382px;
+    height: 239px;
+    margin: 0;
+}
+
+.setores .secao__paragrafo {
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .mapa-setores figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mapa-setores__img {
+        padding: 32px 60px 48px 60px;
+    }
+
+    .legenda__titulo {
+        font-size: 2em;
+        align-self: start;
+    }
+
+    .setores__titulo {
+        margin-top: 68px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .mapa-setores figure {
+        flex-direction: row;
+        padding: 32px 120px;
+    }
+
+    .mapa-setores__img {
+        padding: 0;
+        width: 50vw;
+    }
+
+    .setores {
+        flex-direction: column;
+    }
+
+    .setores__titulo {
+        margin-top: 48px;
+    }
+
+    .setores__container {
+        display: flex;
+        gap: 25px;
+    }
+
+    .setores__pista-premium {
+        padding-top: 106px;
+    }
+}

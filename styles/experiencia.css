@@ -1,0 +1,26 @@
+.corpo-experiencia .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_experiencia.png");
+    background-size: cover;
+}
+
+.corpo-experiencia .secao__paragrafo {
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 1280px) {
+    .corpo-experiencia .secao {
+        padding: 64px 121.5px;
+        text-align: start;
+        align-items: center;
+    }
+
+    .corpo-experiencia .secao__paragrafo {
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    .corpo-experiencia .sustentabilidade {
+        flex-direction: row-reverse;
+        text-align: end;
+    }
+}

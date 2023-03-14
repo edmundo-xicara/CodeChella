@@ -1,0 +1,82 @@
+.corpo-compra-ingresso .banner::before {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../assets/img/banner_compra_ingresso.png");
+    background-size: 200% 150%;
+    background-position: center top;
+}
+
+.formulario-ingresso-container {
+    margin-top: 32px;
+}
+
+.formulario-ingresso-container .secao__titulo {
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.formulario-ingresso {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    row-gap: 32px;
+}
+
+.formulario-ingresso .ingresso__campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-ingresso label {
+    font: var(--fonte-principal);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.formulario-ingresso input, select {
+    height: 56px;
+    padding: 0 16px;
+    font-size: 1.25em;
+    color: black;
+}
+
+.cpf-container span {
+    font-size: 0.75em;
+}
+
+.ingresso__campo .campo__msg-erro {
+    font-size: 1.25em;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.formulario-ingresso__botao-submit {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .corpo-compra-ingresso .banner::before {
+        background-size: 100% 150%;
+    }
+
+    .formulario-ingresso-container {
+        margin-top: 48px;
+    }
+
+    .formulario-ingresso-container .secao__titulo {
+        font-size: 3em;
+    }
+
+    .formulario-ingresso {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .nome-container, .email-container {
+        width: 100%;
+    }
+
+    .cpf-container, .setor-container, .data-nascimento-container, .tipo-ingresso-container {
+        width: 48%;
+    }
+}
