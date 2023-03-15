@@ -17,8 +17,19 @@ campoNome.addEventListener("blur", () => {if(!validaNome()) mostraMsgErro(campoN
 campoEmail.addEventListener("blur", () => {if(!validaEmail()) mostraMsgErro(campoEmail, "O email digitado é inválido*");});
 campoCPF.addEventListener("blur", () => {if(!validaCPF()) mostraMsgErro(campoCPF, "O CPF informado não existe*");});
 campoSetor.addEventListener("blur", () => {if(!validaSetor()) mostraMsgErro(campoSetor, "É preciso escolher algum setor*");});
-campoDataNascimento.addEventListener("blur", () => {if(!validaDataNascimento()) {mostraMsgErro(campoDataNascimento, "Você deve ter pelo menos 10 anos de idade*");}});
+campoDataNascimento.addEventListener("blur", () => {if(!validaDataNascimento()) mostraMsgErro(campoDataNascimento, "Você deve ter pelo menos 10 anos de idade*");});
 campoTipoIngresso.addEventListener("blur", () => {if(!validaTipoIngresso()) mostraMsgErro(campoTipoIngresso, "Escolha o tipo de ingresso desejado*");});
+
+const botaoSubmit = document.getElementById("botao-submit");
+botaoSubmit.addEventListener("click", () => {
+    if(!validaNome()) mostraMsgErro(campoNome, "O nome é obrigatório*");
+    if(!validaEmail()) mostraMsgErro(campoEmail, "O email digitado é inválido*");
+    if(!validaCPF()) mostraMsgErro(campoCPF, "O CPF informado não existe*");
+    if(!validaSetor()) mostraMsgErro(campoSetor, "É preciso escolher algum setor*");
+    if(!validaDataNascimento()) mostraMsgErro(campoDataNascimento, "Você deve ter pelo menos 10 anos de idade*");
+    if(!validaTipoIngresso()) mostraMsgErro(campoTipoIngresso, "Escolha o tipo de ingresso desejado*");
+});
+
 
 let campos = [campoNome, campoEmail, campoCPF, campoDataNascimento];
 let camposSelect = [campoSetor, campoTipoIngresso];
