@@ -3,14 +3,27 @@
     font-family: var(--fonte-principal);
     font-size: 1.25em;
     font-weight: 500;
-    color: white;
+    color: var(--fonte-cor);
     padding: 24px;
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-rodape);
     margin-top: auto;
 }
 
 .rodape .logo {
     width: 234px;
+}
+
+.rodape .logo-letra {
+    stroke: var(--fonte-cor);
+    animation: logo-tracado alternate 2 3s, logo-rodape-preenchimento 0.5s forwards 1s;
+}
+
+.rodape .logo-fundo {
+    fill: var(--cor-rodape);
+}
+
+@keyframes logo-rodape-preenchimento {
+    to { fill: var(--fonte-cor);  }
 }
 
 .rodape .redes-sociais {

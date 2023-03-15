@@ -6,14 +6,16 @@
     --cor-primaria: #4650BD;
     --cor-primaria-hover: #606ADA;
     --cor-secundaria: #008364;
+    --cor-rodape: #4650BD;
 
     --fonte-principal: 'Raleway', sans-serif;
     --fonte-titulo: 'Calistoga', cursive;
+    --fonte-cor: white;
 }
 
 .corpo {
     background: linear-gradient(180deg, #304968 0%, #36C1A0 52.6%, #4650BD 100%);
-    color: white;
+    color: var(--fonte-cor);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -28,6 +30,7 @@
 .banner {
     position: relative;
     height: 75vw;
+    text-align: end;
 }
 
 .banner::before {
@@ -36,6 +39,10 @@
     inset: 0;
     background-size: cover;
     opacity: 60%;
+}
+
+.banner.verao::before {
+    mix-blend-mode: multiply;
 }
 
 .banner__titulo {
@@ -92,6 +99,7 @@
     font-family: var(--fonte-principal);
     font-weight: 700;
     font-size: 1.25em;
+    color: white;
 }
 
 .botao:hover {

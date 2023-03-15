@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     padding: 32px 24px;
+    padding-bottom: 42px;
     background-color: var(--cor-primaria);
     display: flex;
     justify-content: space-between;
@@ -39,6 +40,74 @@
 
 @keyframes logo-preenchimento {
     to { fill: white;  }
+}
+
+.troca-tema-container {
+    position: absolute;
+    bottom: 12px;
+    font-family: var(--fonte-principal);
+    color: white;
+}
+
+.troca-tema {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 130px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.troca-tema::before {
+    content: "Boreal";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+
+.troca-tema::after {
+    content: "Verão";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+
+.troca-tema input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.troca-tema__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--cor-primaria);
+    border-radius: 34px;
+}
+
+.troca-tema__slider::before {
+    content: '';
+    position: absolute;
+    height: 26px;
+    width: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--cor-secundaria);
+    border-radius: 34px;
+    transition: transform 0.4s, width 0.4s;
+}
+
+.troca-tema input:checked + .troca-tema__slider:before {
+    transform: translate(64px);
+    width: 45%;
 }
 
 .cabecalho .menu__botao {
@@ -156,6 +225,12 @@
         margin-bottom: 56px;
     }
 
+    .troca-tema-container {
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
     .cabecalho .menu {
         width: 100%;
     }
@@ -235,6 +310,11 @@
         flex-direction: row;
         padding: 32px 120px;
         margin-bottom: 0;
+    }
+
+    .troca-tema-container {
+        left: 9%;
+        transform: none;
     }
 
     .cabecalho .menu {

@@ -5,6 +5,13 @@
     background-position: 50%;
 }
 
+.corpo-principal .banner.verao::before {
+    mix-blend-mode: normal;
+    background-image: url("../assets/img/banner_boas_vindas_verao.png");
+    filter: none;
+    opacity: .5;
+}
+
 .sobre .secao__paragrafo {
     margin: 24px 0;
 }
@@ -15,6 +22,24 @@
 
 .corpo-principal .atracoes {
     text-align: center;
+    position: relative;
+    margin-bottom: 338px;
+}
+
+.atracoes::after {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 338px;
+    left: 0;
+    background-image: url("../assets/img/guitarra.png");
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: multiply;
+}
+
+.atracoes.verao::after {
+    background-image: url(../assets/img/multidao.png);
 }
 
 .corpo-principal .atracoes__titulo {
@@ -41,6 +66,7 @@
     font-family: var(--fonte-titulo);
     font-weight: 400;
     font-size: 2em;
+    color: white;
     background-color: var(--cor-secundaria);
     width: fit-content;
     padding: 16px;
@@ -81,17 +107,17 @@
     font-weight: 500;
 }
 
-.atracoes__img-guitarra {
-    width: 100vw;
-    height: 338px;
-    object-fit: cover;
-    mix-blend-mode: multiply;
-    margin-bottom: -5px;
-}
-
 @media screen and (min-width: 768px) {
     .sobre__link-ingresso {
         padding: 8px 16px;
+    }
+
+    .atracoes::after {
+        background-position: left 20%;
+    }
+
+    .atracoes.verao::after {
+        background-position: center;
     }
 
     .corpo-principal .atracoes__titulo {
@@ -113,10 +139,6 @@
     .nomes__container {
         flex-direction: row;
         gap: 32px;
-    }
-
-    .atracoes__img-guitarra {
-        object-position: top;
     }
 }
 
@@ -158,9 +180,5 @@
     .nomes__container:nth-child(1) {
         width: 100%;
         justify-content: center;
-    }
-
-    .atracoes__img-guitarra {
-        object-position: 0 20%;
     }
 }
