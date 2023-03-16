@@ -8,8 +8,8 @@ Este projeto é o resultado da minha participação na 6° edição do Challenge
 | -------------  | --- |
 | :sparkles: Nome        | **CodeChella**
 | :label: Tecnologias | html, css e javascript
-| :rocket: URL         | <a href="https://codechella-rouge.vercel.app" target="_blank">https://codechella-rouge.vercel.app</a>
-| :fire: Desafio     | <a href="https://www.alura.com.br/challenges/front-end-6" target="_blank">https://www.alura.com.br/challenges/front-end-6</a>
+| :rocket: URL         | https://codechella-rouge.vercel.app
+| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
 
 <img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/banner_boas_vindas_verao.png" alt="Parque de diversões" width="100%">
 
@@ -23,7 +23,7 @@ Durante o desenvolvimento deste projeto, eu apliquei os conhecimentos adquiridos
 - Implementação de técnicas de acessibilidade, como o uso de atributos aria para leitores de tela.
 - Armazenamendo de dados no navegador utilizando o LocalStorage.
 
-O projeto foi inteiramente desenvolvido em 3 semanas, utilizando apenas HTML, CSS e JavaScript. Deixo meus agradecimentos a <a href="https://www.alura.com.br" target="_blank">Alura</a>, a instrutora <a href="https://github.com/monicahillman" target="_blank">Mônica Hillman</a> que promoveu este Challenge e a <a href="https://github.com/sucodelarangela" target="_blank">Angela Caldas</a> que estava todos os dias no discord tirando dúvidas dos participantes.
+O projeto foi inteiramente desenvolvido em 3 semanas, utilizando apenas HTML, CSS e JavaScript. Deixo meus agradecimentos a [Alura](https://www.alura.com.br), a instrutora [Mônica Hillman](https://github.com/monicahillman) que promoveu este Challenge e a [Angela Caldas](https://github.com/sucodelarangela) que estava todos os dias no discord tirando dúvidas dos participantes.
 
 Espero que goste!
 
@@ -36,8 +36,8 @@ This project is the result of my participation in the 6th edition of the Alura F
 | -------------  | --- |
 | :sparkles: Nome        | **CodeChella**
 | :label: Tecnologias | html, css e javascript
-| :rocket: URL         | <a href="https://codechella-rouge.vercel.app" target="_blank">https://codechella-rouge.vercel.app</a>
-| :fire: Desafio     | <a href="https://www.alura.com.br/challenges/front-end-6" target="_blank">https://www.alura.com.br/challenges/front-end-6</a>
+| :rocket: URL         | https://codechella-rouge.vercel.app
+| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
 
 <img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/banner_boas_vindas.png" alt="Aurora boreal em um céu estrelado" width="100%" height="650px">
 
@@ -50,6 +50,6 @@ Use of CSS Grid and Flexbox for responsive and flexible layouts.
 Creation of SVG animations to add dynamism and interactivity to the page.
 Implementation of accessibility techniques, such as using aria attributes for screen readers.
 Data storage in the browser using LocalStorage.
-The project was entirely developed in 3 weeks, using only HTML, CSS, and JavaScript. I would like to thank <a href="https://www.alura.com.br" target="_blank">Alura</a>, instructor <a href="https://github.com/monicahillman" target="_blank">Mônica Hillman</a> who promoted this Challenge, and <a href="https://github.com/sucodelarangela" target="_blank">Angela Caldas</a> who was available every day on Discord to answer participants' questions.
+The project was entirely developed in 3 weeks, using only HTML, CSS, and JavaScript. I would like to thank [Alura](https://www.alura.com.br), instructor [Mônica Hillman](https://github.com/monicahillman) who promoted this Challenge, and [Angela Caldas](https://github.com/sucodelarangela) who was available every day on Discord to answer participants' questions.
 
 I hope you enjoy it!
