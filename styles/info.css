@@ -17,6 +17,7 @@
     background-color: var(--cor-primaria);
     padding: 16px;
     text-align: start;
+    color: white;
 }
 
 .pergunta__titulo-container:hover {
