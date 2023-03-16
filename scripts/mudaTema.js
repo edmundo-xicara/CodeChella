@@ -1,3 +1,5 @@
+const botaoTrocaTema = document.querySelector(".troca-tema input");
+
 const root = document.querySelector(":root");
 const corpo = document.querySelector(".corpo");
 const banner = corpo.querySelector(".banner");
@@ -13,16 +15,18 @@ const atracoes = corpo.querySelector(".corpo-principal .atracoes");
 const logoIngresso = document.getElementById("logo-ingresso");
 const faviconIngresso = document.getElementById("favicon-ingresso");
 
-document.querySelector(".troca-tema").addEventListener("click", (evento) => {
+botaoTrocaTema.addEventListener("click", (evento) => {
     if(evento.target.checked) {
         mudaTemaVerao();
     } else {
         mudaTemaBoreal();
     }
-})
+});
 
 
 function mudaTemaVerao() {
+    botaoTrocaTema.setAttribute("aria-label", "trocar para tema boreal");
+    
     root.style.setProperty("--cor-primaria", "#2E7BA2");
     root.style.setProperty("--cor-primaria-hover", "#519EC5");
     root.style.setProperty("--cor-secundaria", "#DF9010");
@@ -54,6 +58,8 @@ function mudaTemaVerao() {
 
 
 function mudaTemaBoreal() {
+    botaoTrocaTema.setAttribute("aria-label", "trocar para tema verão");
+
     root.style.setProperty("--cor-primaria", "#4650BD");
     root.style.setProperty("--cor-primaria-hover", "#606ADA");
     root.style.setProperty("--cor-secundaria", "#008364");
