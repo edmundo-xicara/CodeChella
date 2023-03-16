@@ -2,17 +2,16 @@
 
 # CodeChella
 
-Este projeto é o resultado da minha participação na 6° edição do Challenge Front-End promovido pela Alura, se trata de uma página web responsiva para um evento musical fictício chamado CodeChella. O site apresenta informações sobre o evento, a programação de shows e uma página para garantir seu ingresso.
+Este projeto é o resultado da minha participação na 6° edição do Challenge Front-End promovido pela Alura, se trata de uma página web responsiva para um evento musical fictício chamado CodeChella. O site apresenta informações sobre o evento, a programação de shows e uma página para garantir seu ingresso, além de dar a opção ao usuário de escolher entre os temas Verão e Boreal.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **CodeChella**
 | :label: Tecnologias | html, css e javascript
-| :rocket: URL         | https://codechella-rouge.vercel.app
-| :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
+| :rocket: URL         | <a href="https://codechella-rouge.vercel.app" target="_blanck">https://codechella-rouge.vercel.app</a>
+| :fire: Desafio     | <a href="https://www.alura.com.br/challenges/front-end-6" target="_blanck">https://www.alura.com.br/challenges/front-end-6</a>
 
-<img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/img_sobre_verao.png" alt="Plateia feliz e sorrindo enquanto assiste ao show" width="48%">
-<img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/img_sobre.png" alt="Banda de Rock tocando guitarra e baixo" width="48%">
+<img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/banner_boas_vindas_verao.png" alt="Parque de diversões com um enorme carrossel voador" width="100%">
 
 ## Detalhes do projeto
 
@@ -24,14 +23,14 @@ Durante o desenvolvimento deste projeto, eu apliquei os conhecimentos adquiridos
 - Implementação de técnicas de acessibilidade, como o uso de atributos aria para leitores de tela.
 - Armazenamendo de dados no navegador utilizando o LocalStorage.
 
-O projeto foi inteiramente desenvolvido em 3 semanas, utilizando apenas HTML, CSS e JavaScript. Deixo meus agradecimentos a [Alura](https://www.alura.com.br), a instrutora [Mônica Hillman](https://github.com/monicahillman) que promoveu este Challenge e a [Angela Caldas](https://github.com/sucodelarangela) que estava todos os dias no discord tirando dúvidas dos participantes.
+O projeto foi inteiramente desenvolvido em 3 semanas, utilizando apenas HTML, CSS e JavaScript. Deixo meus agradecimentos a <a href="https://www.alura.com.br" target="_blanck">Alura</a>, a instrutora <a href="https://github.com/monicahillman" target="_blanck">Mônica Hillman</a> que promoveu este Challenge e a <a href="https://github.com/sucodelarangela" target="_blanck">Angela Caldas</a> que estava todos os dias no discord tirando dúvidas dos participantes.
 
 Espero que goste!
 
 
 # <a name="english-version">CodeChella (English Version)</a>
 
-This project is the result of my participation in the 6th edition of the Front-End Challenge promoted by Alura. It is a responsive web page for a fictional music event called CodeChella. The site features information about the event, the show schedule, and a page to secure your ticket.
+This project is the result of my participation in the 6th edition of the Alura Front-End Challenge. It is a responsive web page for a fictional music event called CodeChella. The site features information about the event, the show schedule and a page to secure your ticket, as well as giving the user the option to choose between the Summer and Boreal themes.
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
@@ -40,7 +39,7 @@ This project is the result of my participation in the 6th edition of the Front-E
 | :rocket: URL         | https://codechella-rouge.vercel.app
 | :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
 
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+<img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/banner_boas_vindas.png" alt="Aurora boreal em um céu estrelado" width="100%">
 
 ## Project Details
 
@@ -51,6 +50,6 @@ Use of CSS Grid and Flexbox for responsive and flexible layouts.
 Creation of SVG animations to add dynamism and interactivity to the page.
 Implementation of accessibility techniques, such as using aria attributes for screen readers.
 Data storage in the browser using LocalStorage.
-The project was entirely developed in 3 weeks, using only HTML, CSS, and JavaScript. I would like to thank [Alura](https://www.alura.com.br), instructor [Mônica Hillman](https://github.com/monicahillman) who promoted this Challenge, and [Angela Caldas](https://github.com/sucodelarangela) who was available every day on Discord to answer participants' questions.
+The project was entirely developed in 3 weeks, using only HTML, CSS, and JavaScript. I would like to thank <a href="https://www.alura.com.br" target="_blanck">Alura</a>, instructor <a href="https://github.com/monicahillman" target="_blanck">Mônica Hillman</a> who promoted this Challenge, and <a href="https://github.com/sucodelarangela" target="_blanck">Angela Caldas</a> who was available every day on Discord to answer participants' questions.
 
 I hope you enjoy it!
