@@ -8,7 +8,7 @@ Este projeto é o resultado da minha participação na 6° edição do Challenge
 | -------------  | --- |
 | :sparkles: Nome        | **CodeChella**
 | :label: Tecnologias | html, css e javascript
-| :rocket: URL         | codechella-rouge.vercel.app
+| :rocket: URL         | https://codechella-rouge.vercel.app
 | :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
 
 ![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
@@ -36,12 +36,12 @@ This project is the result of my participation in the 6th edition of the Front-E
 | -------------  | --- |
 | :sparkles: Nome        | **CodeChella**
 | :label: Tecnologias | html, css e javascript
-| :rocket: URL         | codechella-rouge.vercel.app
+| :rocket: URL         | https://codechella-rouge.vercel.app
 | :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
 
 ![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
 
-##Project Details
+## Project Details
 
 During the development of this project, I applied the knowledge I gained from the HTML, CSS, and JavaScript courses from Alura, as well as learned about SVG animations and web accessibility. Some of the key points I learned during the process include:
 
