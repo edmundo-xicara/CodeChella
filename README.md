@@ -11,7 +11,8 @@ Este projeto é o resultado da minha participação na 6° edição do Challenge
 | :rocket: URL         | https://codechella-rouge.vercel.app
 | :fire: Desafio     | https://www.alura.com.br/challenges/front-end-6
 
-![](https://via.placeholder.com/1200x500.png?text=imagem+lindona+do+meu+projeto#vitrinedev)
+<img src="[Plateia feliz e sorrindo enquanto assiste ao show](https://github.com/edmundo-xicara/codechella/blob/main/assets/img/img_sobre_verao.png)" width="48%">
+<img src="[Banda de Rock tocando guitarra e baixo](https://github.com/edmundo-xicara/codechella/blob/main/assets/img/img_sobre.png)" width="48%">
 
 ## Detalhes do projeto
 
