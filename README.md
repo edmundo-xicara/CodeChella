@@ -39,7 +39,7 @@ This project is the result of my participation in the 6th edition of the Alura F
 | :rocket: URL         | <a href="https://codechella-rouge.vercel.app" target="_blank">https://codechella-rouge.vercel.app</a>
 | :fire: Desafio     | <a href="https://www.alura.com.br/challenges/front-end-6" target="_blank">https://www.alura.com.br/challenges/front-end-6</a>
 
-<img src="https://github.com/edmundo-xicara/codechella/blob/main/assets/img/banner_boas_vindas.png" alt="Aurora boreal em um céu estrelado" width="100%" height="600px">
+<div style="background-image: url(https://github.com/edmundo-xicara/codechella/blob/main/assets/img/banner_boas_vindas.png); width: 100%; height: 600px"></div>
 
 ## Project Details
 
