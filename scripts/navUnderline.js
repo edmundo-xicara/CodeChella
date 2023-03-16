@@ -1,4 +1,4 @@
-window.onload = () => {
+function sublinhaLink() {
     let linksNav = document.querySelectorAll(".menu__lista a");
     let linksPaginaInicial = document.querySelectorAll(".logo");
     let pagina = window.location.href;
