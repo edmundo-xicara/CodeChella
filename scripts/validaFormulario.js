@@ -144,7 +144,7 @@ function validaSetor() {
 }
 
 function validaDataNascimento() {
-    if(!campoDataNascimento.value) {
+    if(campoDataNascimento.value.length === 0) {
         mostraMsgErro(campoDataNascimento, "Informe a sua data de nascimento*");
         return true;
     }
@@ -159,8 +159,7 @@ function validaDataNascimento() {
         campoDataNascimento.setCustomValidity("Você precisa ter pelo menos 10 anos de idade para comprar um ingresso");
         return false;
     } else if(diferenca < 16) {
-        campoDataNascimento.parentNode.querySelector(".campo__msg-erro").innerHTML = `${dataAtual} ${dataNascimento}`;
-        /* "Você só poderá entrar acompanhado de um responsável*" */
+        campoDataNascimento.parentNode.querySelector(".campo__msg-erro").innerHTML = "Você só poderá entrar acompanhado de um responsável*";
     }
 
     return true;
