@@ -160,8 +160,9 @@ function validaDataNascimento() {
         return false;
     } else if(diferenca < 16) {
         campoDataNascimento.parentNode.querySelector(".campo__msg-erro").innerHTML = "Você só poderá entrar acompanhado de um responsável*";
-        return true;
     }
+
+    return true;
 }
 
 function validaTipoIngresso() {
