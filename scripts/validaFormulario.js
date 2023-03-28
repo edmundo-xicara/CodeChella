@@ -159,10 +159,10 @@ function validaDataNascimento() {
         campoDataNascimento.setCustomValidity("Você precisa ter pelo menos 10 anos de idade para comprar um ingresso");
         return false;
     } else if(diferenca < 16) {
-        campoDataNascimento.parentNode.querySelector(".campo__msg-erro").innerHTML = "Você só poderá entrar acompanhado de um responsável*";
+        campoDataNascimento.parentNode.querySelector(".campo__msg-erro").innerHTML = diferenca;
+        /* "Você só poderá entrar acompanhado de um responsável*" */
+        return true;
     }
-
-    return true;
 }
 
 function validaTipoIngresso() {
