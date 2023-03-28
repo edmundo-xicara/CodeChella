@@ -146,7 +146,7 @@ function validaSetor() {
 function validaDataNascimento() {
     if(campoDataNascimento.value.length === 0) {
         mostraMsgErro(campoDataNascimento, "Informe a sua data de nascimento*");
-        return true;
+        return false;
     }
 
     let dataNascimento = new Date(campoDataNascimento.value);
